@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 14px;
+    color: hsl(212, 21%, 14%);
+    background-color: hsl(30, 38%, 92%);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product__image {
+    margin: 20px 20px 0 20px;
+}
+
+#img-mobile {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#img-desktop {
+    display: none;
+}
+
+.product__field {
+    margin: -5px 20px 0 20px;
+    padding: 0 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.product__field h4 {
+    margin: 20px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.product__name {
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.product__desc {
+    margin-bottom: 20px;
+    font-weight: 700;
+    opacity: .5;
+}
+
+.product__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 60%;
+    font-family: 'Fraunces', serif;
+}
+
+.product__price--new {
+    font-size: 2em;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.product__price--old {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.product__btn {
+    margin-bottom: 20px;
+}
+
+.product__btn button {
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+}
+
+i {
+    padding: 0 5px;
+}
+
+.product__btn button:hover {
+    cursor: pointer;
+    background-color: hsl(160, 37%, 22%);
+}
+
+.attribution {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .product {
+        display: flex;
+        flex-direction: row;
+        margin: 100px auto;
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .product__image {
+        margin: 0 -20px 0 0;
+        width: 50%;
+    }
+
+    #img-mobile {
+        display: none;
+    }
+
+    #img-desktop {
+        display: block;
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .product__field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 5px;
+        padding: 0 50px;
+        width: 50%;
+    }
+
+    .product__price {
+        width: 80%;
+    }
+}
